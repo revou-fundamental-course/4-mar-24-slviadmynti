@@ -59,5 +59,9 @@ window.onclick = function (event) {
 };
 
 function reset() {
-  document.getElementById("myModal").value = "";
+  weight.value = "";
+  height.value = "";
+  age.value = "";
+  male.checked = false;
+  female.checked = false;
 }
