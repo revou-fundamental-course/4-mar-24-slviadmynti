@@ -4,6 +4,7 @@ var weight = document.getElementById("weight");
 var male = document.getElementById("male");
 var female = document.getElementById("female");
 var form = document.getElementById("form");
+var result = document.getElementById("result");
 let resultArea = document.querySelector(".comment");
 
 modalContent = document.querySelector(".modal-content");
@@ -62,6 +63,10 @@ function reset() {
   weight.value = "";
   height.value = "";
   age.value = "";
+  resultArea.style.display = "none";
+  document.querySelector("#result").innerHTML = "00.00";
+  document.querySelector(".comment").innerHTML = ``;
+
   male.checked = false;
   female.checked = false;
 }
